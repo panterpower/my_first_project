@@ -56,12 +56,10 @@ public class lesson1 {
          myArray[3] = 'н';
         System.out.println(myArray);
 
-        char[] myArray2 = myArray;
         myArray[0] = 'к';
-        System.out.println(myArray2);
-
-        myArray2[0] = 'ч';
         System.out.println(myArray);
+
+
 
     }
 }
