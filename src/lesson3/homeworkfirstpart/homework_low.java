@@ -1,4 +1,4 @@
-package lesson3;
+package lesson3.homeworkfirstpart;
 
 import javax.swing.*;
 import java.util.Arrays;
@@ -13,7 +13,7 @@ public class homework_low {
         // Ожидаемый результат: 1а 2а 3а .. 100а
         System.out.println("1 задание");
         for (int i = 1; i < 101; i++) {
-           System.out.print(i + "a" + " ");
+            System.out.print(i + "a" + " ");
         }
 
         // Новая строка
@@ -78,27 +78,7 @@ public class homework_low {
         } else
             System.out.println("У меня ничего нет");
 
-        // Задание №4
-        // Создать два класса, которые описывают какое либо животное (имеют два атрибута).
-        // Написать к ним конструктор, сеттеры, геттеры.
-
-        }
-
-
-
-
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+}
