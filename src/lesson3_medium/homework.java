@@ -34,17 +34,15 @@ public class homework {
         // Подсказка: прочитай про операнд "%".
         // (1 % 2); выведет остаток
 
-        int[] myArray = {1, 1, 1, 1, 1, 1};
-        int oneZero;
-        for (int i = 0; i < 6; i++) {
+        int[] myArray = {1, 1, 1, 1, 1, 1, 1};
+        for (int i = 0; i < myArray.length; i++) {
 
             if ((i % 2) != 0) {
-                oneZero = 1;
+                myArray[i] = 1;
 
             } else
-                oneZero = 0;
+                myArray[i] = 0;
 
-            myArray[i] = oneZero;
         }
         System.out.println(Arrays.toString(myArray));
 
@@ -69,7 +67,7 @@ public class homework {
         // Ожидаемый результат: выведен на экран счет клиенту.
 
 //        Не получается
-        
+
 //        if (hasFuel == true){
 //            if (hasWheelsProblem == true) {
 //                sum = 2_000;
@@ -77,11 +75,11 @@ public class homework {
 //            }
 //
 //            }
-
-
-
-        }
-        System.out.println(sum);
+//
+//
+//
+//        }
+//        System.out.println(sum);
 
 
 
@@ -95,5 +93,8 @@ public class homework {
 //        // Работник берет из склада товар, на складе товар уменьшается. Работник когда взял товар, выводит на экран
 //        // "Ура я испортил водку!" и добавляет к себе в журнал количество испорченного товара.
 //        // У склада есть только одна позиция - Водка.
+
+
+
     }
 }
