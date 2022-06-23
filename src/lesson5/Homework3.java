@@ -12,6 +12,29 @@ public class Homework3 {
         // 1.Создать абстрактный класс, который будет описывать общие действия этих машин (методы будут не абстрактные)
         // 2.Создать два класса, которые будут наследоваться от абстрактного класса, и реализовывать особенности этих машин
         // Методы должны просто печатать на экран действия машин (начал движение, включил музыку и тд.)
+
+        // 2. Создать 20 тойот, 20 жигулей с помощью CarFactory, положить их в один массив.
+        // 3. Пройтись по массиву, проверить к какому классу принадлежит машина, привести тип к классу машины
+        // и вызвать характерные для нее методы.
+
+//        Car car1 = new Car();
+//        Car cat3 = new Cat();
+//        Car dog2 = new Dog();
+//        Car dog3 = new Dog();
+
+
+//        Car[] ladaCar = {lada1, lada2};
+//        for (Car car : ladaCar) {
+//            car.move();
+//            car.stop();
+//            car.turnOnLight();
+//            if (car instanceof Lada) {
+//                Car myLada = (Lada) car;
+////                myLada.broke;
+//            }
+//        }
+
+
         Lada lada1 = new Lada();
         Toyota toyota1 = new Toyota();
 
@@ -21,6 +44,7 @@ public class Homework3 {
         lada1.turnOnLight();
 
         toyota1.music();
+
 
         //Задача №2
         //Необходимо:
@@ -38,14 +62,16 @@ public class Homework3 {
         String string2 = bufferedReader.readLine();
         System.out.println(string1 + " " + string2);
 
-        //        Не работает!
-        //        while (fileReader.ready()) {
-        //
-        //            int read = fileReader.read();
-        //            result += (char) read;
-        //        }
-        //        fileReader.close();
-        //        result = result.replaceAll("/n"," ");
+//                Не работает!
+//        FileReader fileReader = new FileReader("resource/my_first_file.txt");
+//        String result = "";
+//        while (fileReader.ready()) {
+//            int read = fileReader.read();
+//            result += (char) read;
+//
+//        }
+//        fileReader.close();
+//        System.out.println(result.replace('\n', ' '));
 
         //Задача №3
         //Необходимо:
@@ -62,11 +88,11 @@ public class Homework3 {
         String workerIncomes = String.valueOf(worker.getIncomes());
         String workerOutcomes = String.valueOf(worker.outIncomes);
 
-        FileWriter fileWriter = new FileWriter("D:\\repos\\my_first_project\\resource\\report.txt", true);
-        fileWriter.write("\n");
+        FileWriter fileWriter = new FileWriter("resource/report.txt", true);
         fileWriter.write(workerIncomes);
         fileWriter.write("\n");
         fileWriter.write(workerOutcomes);
+        fileWriter.write("\n");
         fileWriter.close();
 
 
