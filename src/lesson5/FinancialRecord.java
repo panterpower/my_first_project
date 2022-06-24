@@ -1,11 +1,11 @@
 package lesson5;
 
-public class Financial_record {
+public class FinancialRecord {
 
     int intIncomes;
     int outIncomes;
 
-    public Financial_record(int incomes, int outcomes) {
+    public FinancialRecord(int incomes, int outcomes) {
         intIncomes = incomes;
         outIncomes = outcomes;
     }

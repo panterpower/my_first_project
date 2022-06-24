@@ -21,23 +21,25 @@ public class Homework3 {
         Toyota toyota1 = new Toyota();
 
 //        Закоментил легкое задание
-//        lada1.move();
-//        lada1.broke();
-//        lada1.stop();
-//        lada1.turnOnLight();
-//        toyota1.music();
+        lada1.move();
+        lada1.broke();
+        lada1.stop();
+        lada1.turnOnLight();
+        toyota1.music();
 
-        String myArray[] = new String[20];
-        for (String carArray : myArray) {
-
-            lada1.createLada();
-            lada1.stop();
-            lada1.move();
-            lada1.turnOnLight();
-            lada1.broke();
-            toyota1.createToyota();
-            toyota1.music();
-        }
+//        // Массив для перебора 20
+//
+//        String myArray[] = new String[20];
+//        for (String carArray : myArray) {
+//
+//            lada1.createLada();
+//            lada1.stop();
+//            lada1.move();
+//            lada1.turnOnLight();
+//            lada1.broke();
+//            toyota1.createToyota();
+//            toyota1.music();
+//        }
 
         //Задача №2
         //Необходимо:
@@ -74,7 +76,7 @@ public class Homework3 {
         // 4. Записать в файл "report.txt" данные из объекта класса.C
         // Ожидаемый результат: в файле report.txt - одна строка: доходы = 500, расходы 300
 
-        Financial_record worker = new Financial_record(500, 300);
+        FinancialRecord worker = new FinancialRecord(500, 300);
         String incomesWorker = worker.getComes();
 
 //        System.out.println(incomesWorker);
@@ -85,7 +87,6 @@ public class Homework3 {
         fileWriter.write(workerIncomes);
         fileWriter.write("\n");
         fileWriter.write(workerOutcomes);
-        fileWriter.write("\n");
         fileWriter.close();
 
 
