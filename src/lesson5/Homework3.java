@@ -84,9 +84,7 @@ public class Homework3 {
         String workerOutcomes = String.valueOf(worker.outIncomes);
 
         FileWriter fileWriter = new FileWriter("resource/report.txt", true);
-        fileWriter.write(workerIncomes);
-        fileWriter.write("\n");
-        fileWriter.write(workerOutcomes);
+        fileWriter.write("доходы = " + workerIncomes + " " + "расходы = " + workerOutcomes + "\n");
         fileWriter.close();
 
 
