@@ -8,8 +8,8 @@ public class Homework_low {
         // Атрибут утки: isInjured (ранен),атрибут самолета: countPassengers. +
 
 
-        Airplan airplan = new Airplan(true);
-        Duck duck = new Duck(75);
+        Duck airplan = new Duck(true);
+        Airplan duck = new Airplan(75);
 //        airplan.fly();
 //        duck.fly();
 

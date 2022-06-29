@@ -2,20 +2,19 @@ package lesson7;
 
 public class Duck implements Airfly {
 
-    private int countPassengers;
 
-    public Duck(int countPassengers) {
-        this.countPassengers = countPassengers;
+    private boolean isInjured;
+
+    public Duck(boolean isInjured) {
+        this.isInjured = isInjured;
     }
 
-    //    public Duck(boolean isInjured) {
-//        if (isInjured){
-//            System.out.println("Ранен");
-//        }else {
-//            System.out.println("Здоров");
-//        }
+    //    public Airplan(int countPassengers) {
+//        System.out.println("Количество пассажиров: " + countPassengers);
 //    }
+
     public void fly() {
-        System.out.println("Летит с помощью мотора. Пассажиров: " + countPassengers);
+        System.out.println("Утка Летит, махая крыльями. Ранена: " + isInjured);
     }
+
 }
